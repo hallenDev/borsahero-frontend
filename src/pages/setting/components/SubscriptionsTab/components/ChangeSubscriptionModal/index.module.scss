@@ -1,0 +1,64 @@
+.changeSubscription {
+    width: fit-content;
+    height: fit-content;
+    max-width: calc(688px - 56px);
+    padding: 28px;
+    border-radius: 30px;
+    background-color: var(--surfacePrimary);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+
+    .title {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .closeBtn {
+        cursor: pointer;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background-color: var(--surfacePrimaryHover);
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cardList {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .cardItem {
+        width: calc(306px - 48px);
+        padding: 24px;
+        border-radius: 20px;
+        gap: 24px;
+        background-color: var(--surfacePrimaryLess);
+        display: flex;
+        flex-direction: column;
+
+        .cardTitle {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+
+        .price {
+            display: flex;
+            align-items: baseline;
+            gap: 4px;
+        }
+
+        .action {
+            width: 100%;
+        }
+    }
+}

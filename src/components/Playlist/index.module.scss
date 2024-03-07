@@ -1,0 +1,60 @@
+.playlist {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+
+    .backCard {
+        width: calc(100% - 32px);
+        height: 100%;
+        border-radius: 12px;
+        background-color: #353535;
+    }
+
+    .foreCard {
+        position: absolute;
+        width: calc(100% - 16px - 6px);
+        height: calc(100% - 5px - 16px - 6px);
+        border-radius: 20px;
+        border: 3px solid var(--surfacePrimary);
+        bottom: 0px;
+        background-image: url('../../assets/png/image4.png');
+        background-size: cover;
+        background-position: center;
+        padding: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &:hover {
+            border: 3px solid var(--borderSuccessSubDued);
+        }
+
+        .top {
+            z-index: 2;
+            display: flex;
+            justify-content: space-between;
+
+            .title {
+                display: flex;
+                flex-direction: column;
+
+                .label {
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 15.4px;
+                    color: var(--textPrimary);
+                }
+
+                .bought {
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 13.2px;
+                    color: var(--textSecondary);
+                }
+            }
+        }
+    }
+}

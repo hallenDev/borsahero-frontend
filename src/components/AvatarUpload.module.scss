@@ -1,0 +1,19 @@
+
+.avatarUploadForm {
+    position: relative;
+    color: white;
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.avatarUploadFormWithError {
+    position: relative;
+    color: white;
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: 4px solid var(--borderDestructiveSubdued);
+}

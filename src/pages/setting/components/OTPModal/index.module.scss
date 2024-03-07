@@ -1,0 +1,55 @@
+.wrapper {
+    position: relative;
+    width: 340px;
+    padding: 28px;
+    height: fit-content;
+    background: var(--surfacePrimary);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .backBtn {
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background-color: var(--surfacePrimaryHover);
+        top: 16px;
+        right: 16px;
+        cursor: pointer;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .body {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        justify-content: center;
+
+        .resend {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+    }
+
+    .footer {
+        display: flex;
+        justify-content: center;
+        gap: 11px;
+
+        .cancel {
+            width: 149px;
+        }
+
+        .save {
+            width: 149px;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+.wrapper {
+    margin-top: 35px;
+
+    .billingWrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        .cardGroup {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+    }
+}

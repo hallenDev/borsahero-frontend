@@ -1,0 +1,115 @@
+.header {
+    padding: 0px 24px 24px 24px;
+    width: calc(100% - 48px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rightHeader {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.line {
+    border: 1px solid #FFFFFF1A;
+    height: 40px;
+}
+
+.deskTitle {
+    display: block;
+}
+
+.mobTitle {
+    display: none;
+}
+
+.tabButtonForm {
+    margin-top: 16px;
+    display: flex;
+    gap: 2px;
+}
+
+@media (max-width: 830px) {
+    .line {
+        display: none;
+    }
+
+    .rightHeader {
+        display: flex;
+        justify-content: space-between;
+    }
+    .header {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: left;
+        align-items: unset;
+    }
+    .desTitle {
+        display: none;
+    }
+
+    .mobTitle {
+        display: block;
+    }
+    .header {
+        padding: 0px;
+        width: 100%;
+        gap: 38px;
+    }
+    .searchForm {
+        margin: 24px 0px 0px 0px !important;
+    }
+
+    .tabForm {
+        padding: 24px 0px 0px 0px !important;
+        width: 100% !important;
+        gap: 16px !important;
+    }
+
+    .tabButtonForm {
+        margin-top: 0px;
+    }
+}
+
+.searchForm {
+    margin: 16px 0px 0px 24px;
+}
+
+.tabForm {
+    padding: 24px;
+    width: calc(100% - 48px);
+
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+
+.tabButton {
+    background: none;
+    border: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22.4px;
+    color: var(--textSecondary);
+    border-radius: 20px;
+    padding: 0px 12px;
+
+    &:hover {
+        background-color: var(--surfaceSecondary);
+    }
+}
+
+.tabButtonActive {
+    background: none;
+    border: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22.4px;
+    color: var(--textAccent);
+    border-radius: 20px;
+    background-color: var(--surfaceAccentSubdued);
+    padding: 0px 12px;
+}

@@ -1,0 +1,76 @@
+.playlistForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titleSection {
+    display: flex;
+    gap: 16px;
+}
+
+.rightSection {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.scrollAction {
+    display: flex;
+    align-items: center;
+}
+
+.scrollbtn {
+    height: 28px;
+    cursor: pointer;
+    border-radius: 50%;
+
+    &:hover {
+        background-color: var(--borderPrimary);
+    }
+}
+
+.upload {
+    width: 112px;
+}
+
+.videoList {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    overflow-x: hidden;
+
+    .item {
+        min-width: 304px;
+        height: 190px;
+    }
+}
+
+@media (max-width: 970px) {
+    .playlistForm {
+        gap: 16px;
+    }
+}
+
+.emptyVideoCard {
+    width: 304px;
+    height: 190px;
+    border-radius: 20px;
+    background-color: var(--surfacePrimaryLess);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+
+    .button {
+        width: 82px;
+    }
+}

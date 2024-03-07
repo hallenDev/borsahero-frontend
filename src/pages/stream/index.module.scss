@@ -1,0 +1,24 @@
+.header {
+    padding: 0px 24px 24px 24px;
+    width: calc(100% - 48px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rightHeader {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.line {
+    border: 1px solid #FFFFFF1A;
+    height: 40px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}

@@ -1,0 +1,52 @@
+.popularListWrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 24px;
+}
+
+.titleWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .left {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+    }
+
+    .right {
+        display: flex;
+        align-items: center;
+
+        .scrollBtn {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            cursor: pointer;
+
+            &:hover {
+                background-color: var(--borderPrimary);
+            }
+        }
+    }
+}
+
+.title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26.04px;
+    color: white;
+}
+
+.playlist {
+    overflow-x: hidden;
+    display: flex;
+    gap: 24px;
+
+    .item {
+        min-width: 243px;
+        min-height: 152px;
+    }
+}

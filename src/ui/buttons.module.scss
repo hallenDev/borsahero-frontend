@@ -1,0 +1,280 @@
+.npButtonForm {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+    border-radius: 23px;
+    &:hover {
+        outline:3px solid var(--borderAccentSubdued);
+    }
+}
+
+.npButton {
+    font-family: "DM Sans";
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+    background-color: var(--buttonPrimary) ;
+    color: var(--textPrimary);
+    width: 100%;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.spButtonForm {
+    display: flex;
+    align-items: center;
+    height: 28px;
+    width: 100%;
+    border-radius: 20px;
+    &:hover {
+        outline:3px solid var(--borderAccentSubdued);
+    }
+}
+
+.liveButtonForm {
+    display: flex;
+    align-items: center;
+    height: 28px;
+    width: 100%;
+    border-radius: 20px;
+    outline: 4px solid var(--borderAccentSubdued);
+    &:hover {
+        outline:2px solid var(--borderAccentSubdued);
+    }
+}
+
+.spButton {
+    font-family: "DM Sans";
+    border: none;
+    border-radius: 20px;
+    height: 28px;
+    background-color: var(--buttonPrimary) ;
+    color: var(--textPrimary);
+    width: 100%;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.viewAll {
+    font-family: "DM Sans";
+    width: 56px;
+    height: 20px;
+    border-radius: 20px;
+    padding: 4px 8px;
+    background-color: #85FF3A1A;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #85FF3A;
+    cursor: pointer;
+}
+
+.sdButtonForm {
+    display: flex;
+    align-items: center;
+    height: 28px;
+    width: 100%;
+    border-radius: 20px;
+    &:hover {
+        outline:3px solid var(--borderDestructiveSubdued);
+    }
+}
+
+.sdButton {
+    font-family: "DM Sans";
+    border: none;
+    border-radius: 20px;
+    height: 28px;
+    background-color: var(--buttonDestructive) ;
+    color: var(--textPrimary);
+    width: 100%;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.ntBtnWrapper {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+    border-radius: 23px;
+    &:hover {
+        outline:3px solid var(--borderSecondary);
+    }
+
+    .ntBtn {
+        font-family: "DM Sans";
+        border: none;
+        border-radius: 20px;
+        height: 40px;
+        background-color: var(--buttonTetriary) ;
+        color: var(--textPrimary);
+        width: 100%;
+        cursor: pointer;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+    }
+}
+
+.ndBtnWrapper {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+    border-radius: 23px;
+    &:hover {
+        outline:3px solid var(--borderDestructiveSubdued);
+    }
+
+    .ndBtn {
+        font-family: "DM Sans";
+        border: none;
+        border-radius: 20px;
+        height: 40px;
+        background-color: var(--buttonDestructive) ;
+        color: var(--textPrimary);
+        width: 100%;
+        cursor: pointer;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+    }
+}
+
+
+.stButtonForm {
+    display: flex;
+    align-items: center;
+    height: 28px;
+    width: 100%;
+    border-radius: 20px;
+    &:hover {
+        outline:3px solid var(--borderSecondary);
+    }
+}
+
+.stButton {
+    font-family: "DM Sans";
+    border: none;
+    border-radius: 20px;
+    height: 28px;
+    background-color: var(--buttonTetriary) ;
+    color: var(--textPrimary);
+    width: 100%;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.sdButtonForm {
+    display: flex;
+    align-items: center;
+    height: 28px;
+    width: 100%;
+    border-radius: 20px;
+    &:hover {
+        outline:3px solid var(--borderDestructiveSubdued);
+    }
+}
+
+.sdButton {
+    font-family: "DM Sans";
+    border: none;
+    border-radius: 20px;
+    height: 28px;
+    background-color: var(--buttonDestructive) ;
+    color: var(--textPrimary);
+    width: 100%;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.radioBtnGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    span {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: var(--textPrimary);
+    }
+
+    label {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: var(--textPrimary);
+    }
+
+    .container {
+        display: block;
+        position: relative;
+        padding-left: 35px;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+        }
+
+        .checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 24px;
+            width: 24px;
+            background-color: var(--surfaceSecondary);
+            border: 1px solid var(--borderPrimary);
+            border-radius: 50%;
+        }
+    }
+}
+
+.container:hover input ~ .checkmark {
+    outline: 2px solid var(--borderAccentSubdued);
+}
+
+.container input:checked ~ .checkmark {
+    background-color: var(--surfaceAccent);
+    border: 2px solid var(--borderWhite);
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  

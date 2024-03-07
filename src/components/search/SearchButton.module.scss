@@ -1,0 +1,19 @@
+.searchButtonWrapper {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    outline: 1px solid #FFFFFF1A;
+}
+
+.searchButton {
+    border-radius: 50%;
+    background-color: #FFFFFF1A;
+    width: 24.5px;
+    height: 24.5px;
+    border: none;
+    margin: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

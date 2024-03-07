@@ -1,0 +1,96 @@
+.avatarWrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+}
+
+.avatarImage {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+    &:hover {
+        outline: 2px solid var(--borderSuccessSubDued);
+    }
+}
+
+.username {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18.23px;
+    color: #FFFFFF;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100px;
+}
+
+@media (max-width: 665px) {
+    .username {
+        display: none;
+    }
+}
+
+.dropDown {
+    position: relative;
+    display: inline-block;
+
+    &:hover {
+        .dropdownWrapper {
+            display: block;
+        }
+        .avatarImage {
+            outline: 2px solid var(--borderSuccessSubDued);
+        }
+    }
+}
+
+.dropdownWrapper {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 0px;
+    padding-top: 12px;
+    z-index: 1;
+}
+
+.dropdownMenu button {
+    background: none;
+    border: none;
+}
+
+.dropDownContent {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--surfacePrimaryLess);
+    border-radius: 20px;
+    border: 1px solid var(--borderPrimary);
+    width: 145px;
+    padding: 14px 9px;
+    gap: 7px;
+}
+
+.line {
+    width: 100%;
+    border-top: 1px solid var(--borderPrimary);
+}
+
+.logoutBtn {
+    background: none;
+    border: none;
+    color: var(--textDestructive);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19.6px;
+}
+
+.menuItem {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    padding: 3px 5px;
+    &:hover {
+        background-color: var(--borderPrimary);
+        border-radius: 6px;
+    }
+}

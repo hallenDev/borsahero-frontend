@@ -1,0 +1,115 @@
+.errorMsgWrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 2px;
+
+    .warningIcon {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+.errorMsg {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--destructiveRed) !important;
+}
+
+.successMsg {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--textSuccess);
+}
+
+.H2 {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 44px;
+    color: white;
+}
+
+.H3 {
+    // width: 100%;
+    word-break: break-all;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 26.4px;
+    color: white;
+}
+
+.secondaryText {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22.4px;
+    color: var(--textSecondary);
+}
+
+.primaryText {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22.4px;
+    color: var(--textPrimary);
+    word-break: break-all;
+    white-space: break-spaces;
+}
+
+.primaryBold {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22.4px;
+    color: var(--textPrimary);
+}
+
+.secondaryLabel {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19.6px;
+    color: var(--textPrimary);
+}
+
+.primaryGreyText {
+    span {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22.4px;
+        color: var(--textSecondary);
+    }
+}
+
+.secondaryGreyText {
+    span {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19.6px;
+        color: var(--textSecondary);
+    }
+}
+
+.secondaryLinkText {
+    span {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19.6px;
+        color: var(--textAccent);
+    }
+}
+
+.tetriaryGreyText {
+    span {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 13.2px;
+        color: var(--textSecondary);
+    }
+}
+
+.secondaryBold {
+    span {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 19.6px;
+        color: var(--textPrimary);
+    }
+}

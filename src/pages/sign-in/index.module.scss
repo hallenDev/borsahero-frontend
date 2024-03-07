@@ -1,0 +1,17 @@
+.forgotPass{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+}
+
+.errorMsgWrapper {
+    display: flex;
+    gap: 2px;
+}
+
+.errorMsg {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--destructiveRed);
+}

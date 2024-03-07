@@ -1,0 +1,161 @@
+.header {
+    padding: 0px 24px 24px 24px;
+    width: calc(100% - 48px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.deskTitle {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.mobTitle {
+    display: none;
+}
+
+.rightHeader {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+@media (max-width: 970px) {
+    .profileSection {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .avatarSection {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .profileLine {
+        display: none;
+    }
+
+    .content {
+        gap: 24px;
+    }
+}
+
+.line {
+    border: 1px solid #FFFFFF1A;
+    height: 40px;
+}
+
+.userWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.userSection {
+    width: 206px;
+    height: 40px;
+    border-radius: 30px;
+    border: 1px solid var(--borderPrimary);
+    padding: 0 24px;
+    align-items: center;
+    display: flex;
+    gap: 8px;
+}
+
+.ratingWapper {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.avatar {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+.actSection {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.reviewList {
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    // justify-content: space-around;
+}
+
+.filterWrapper {
+    width: 140px;
+    height: 18px;
+    padding: 10px 12px;
+    border-radius: 30px;
+    background-color: var(--surfaceSecondary);
+    border: 1px solid var(--borderPrimary);
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    cursor: pointer;
+}
+
+.filter {
+    display: flex;
+    grid-area: 8px;
+    align-items: center;
+}
+
+@media (max-width: 830px) {
+    .line {
+        display: none;
+    }
+
+    .rightHeader {
+        display: flex;
+        justify-content: space-between;
+    }
+    .header {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: left;
+        align-items: unset;
+    }
+    .deskTitle {
+        display: none;
+    }
+
+    .mobTitle {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+    .header {
+        padding: 0px;
+        width: 100%;
+        gap: 38px;
+    }
+}
+
+@media (max-width: 750px) {
+    .userWrapper {
+        flex-direction: column;
+        gap: 24px;
+        align-items: baseline;
+    }
+    .actSection {
+        // display: flex;
+        justify-content: space-between;
+        // align-items: center;
+        // gap: 16px;
+        width: 100%;
+    }
+    .userSection {
+        width: calc(100% - 48px);
+    }
+}

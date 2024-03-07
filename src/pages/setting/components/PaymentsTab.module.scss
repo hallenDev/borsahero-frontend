@@ -1,0 +1,31 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+
+    .payment {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        width: fit-content;
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .editBtn {
+                width: 30px;
+                height: 20px;
+                border-radius: 20px;
+                padding: 4px 8px;
+                background-color: #85FF3A1A;
+                cursor: pointer;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+                color: var(--accentSecondary);
+            }
+        }
+    }
+}

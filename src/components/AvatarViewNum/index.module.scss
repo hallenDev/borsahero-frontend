@@ -1,0 +1,43 @@
+.wrapper {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    cursor: pointer;
+    width: calc(100% - 90px);
+
+    &:hover {
+        .avatar {
+            outline: 2px solid var(--borderAccentSubdued);
+        }
+    }
+}
+
+.avatar {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+}
+
+.viewInfoWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: calc(100% - 36px);
+}
+
+.username {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 15.4px;
+    color: white;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.viewNum {
+    color: #FFFFFF80;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 13.2px;
+}

@@ -1,0 +1,31 @@
+.topUserWrapper {
+    width: 312px;
+    height: 32px;
+    border-radius: 100px;
+    border: 2px solid var(--accent);
+    background-color: #FFFFFF0A;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    gap:8px;
+}
+
+.RightArrow {
+    width: 32px;
+    height: 32px;
+    align-items: center;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+
+    &:hover {
+        background-color: var(--surfaceSecondary);
+    }
+}
+
+@media (max-width: 1160px) {
+    .topUserWrapper {
+        display: none !important;
+    }
+}

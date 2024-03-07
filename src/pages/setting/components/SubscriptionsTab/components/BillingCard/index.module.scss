@@ -1,0 +1,27 @@
+.wrapper {
+    width: 258px;
+    height: fit-content;
+    border-radius: 20px;
+    padding: 24px;
+    background-color: var(--surfacePrimaryLess);
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    .description {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .price {
+        display: flex;
+        align-items: baseline;
+        gap: 4px;
+    }
+    
+    .action {
+
+    }
+}

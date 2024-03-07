@@ -1,0 +1,86 @@
+.wrapper {
+    width: 306px;
+    height: 96px;
+    border-radius: 20px;
+    background-color: var(--surfacePrimaryLess);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .addBtn {
+        width: 82px;
+    }
+}
+
+.payoutCardWrapper {
+    position: relative;
+    padding: 8px 24px;
+    width: 258px;
+    height: fit-content;
+    border-radius: 20px;
+    background-color: var(--surfacePrimaryHover);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cardTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    span {
+        font-family: 'Ubuntu';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: white;
+        margin-top: 16px;
+    }
+
+    .cardType {
+        width: 48px;
+        height: 30px;
+    }
+}
+
+.cardDetail {
+    display: flex;
+    flex-direction: column;
+
+    .name {
+        font-family: "IBM Plex Mono";
+        font-size: 16px;
+        line-height: 24px;
+        color: var(--textPrimary);
+        text-transform: capitalize;
+    }
+
+    .number {
+        font-family: "IBM Plex Mono";
+        font-size: 16px;
+        line-height: 24px;
+        color: var(--textPrimary);
+    }
+}
+
+.actionWrapper {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--blackBlack-750);
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    .edit {
+        width: 82px;
+    }
+
+    .delete {
+        width: 82px;
+    }
+}

@@ -1,0 +1,38 @@
+.form {
+    width: calc(366px - 56px);
+    height: fit-content;
+    padding: 28px;
+    background-color: var(--surfacePrimary);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+
+    .closeBtn {
+        position: absolute;
+        right: 16px;
+        top: 16px;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background-color: var(--surfacePrimaryHover);
+        cursor: pointer;
+    }
+
+    .content {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .action {
+        display: flex;
+        justify-content: space-between;
+
+        .item {
+            width: 149px;
+        }
+    }
+}

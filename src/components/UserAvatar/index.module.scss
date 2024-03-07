@@ -1,0 +1,34 @@
+.userAvatarWrapper {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+
+    .tooltip {
+        position: absolute;
+        border-radius: 20px;
+        padding: 12px;
+        display: none;
+        top: -40px;
+        background-color: var(--surfaceInversed);
+        width: fit-content;
+        z-index: 10;
+
+        span {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 19.6px;
+            color: var(--surfacePrimary);
+            text-wrap: nowrap;
+        }
+    }
+
+    &:hover {
+        outline: 2px solid var(--borderAccentSubdued);
+
+        .tooltip {
+            display: block;
+        }
+    }
+}

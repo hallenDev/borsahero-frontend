@@ -1,0 +1,36 @@
+.requestSubscribe {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 28px;
+    border-radius: 30px;
+    background-color: var(--surfacePrimary);
+    width: calc(366px - 56px);
+    position: relative;
+
+    .backBtn {
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background-color: var(--surfacePrimaryHover);
+        top: 16px;
+        right: 16px;
+        cursor: pointer;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .action {
+        display: flex;
+        gap: 10px;
+
+        .item {
+            width: calc(50% - 5px);
+        }
+    }
+}

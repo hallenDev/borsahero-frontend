@@ -1,0 +1,287 @@
+.defaultInputForm {
+    width: 100%;
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.primaryInputForm {
+  width: 100%;
+  gap: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.defaultInputWrapper {
+    position: relative;
+}
+
+.defaultInputIcon {
+  height: 20px;
+  width: 20px;
+  background: none;
+  border: none;
+  position: absolute;
+  padding: 0;
+  right: 14px;
+  bottom: 10px;
+  cursor: pointer;
+}
+
+.defaultInput {
+    width: calc(100% - 50px);
+    height: 20px;
+    border-radius: 30px;
+    background-color: var(--surfaceSecondary);
+    border: 2px solid var(--borderPrimary);
+    padding:10px 32px 10px 12px;
+    color:white;
+    line-height:20px;
+    font-weight:20px;
+    font-size:14px;
+    &:hover {
+        background-color: var(--background);
+        border: 2px solid var(--borderAccentSubdued);
+    }
+    &:focus {
+        background-color: var(--background);
+        border: 2px solid var(--borderAccent);
+        outline: none;
+    }
+}
+
+.primaryInput {
+  width: calc(100% - 50px);
+  height: 20px;
+  border-radius: 30px;
+  background-color: var(--surfaceSecondary);
+  border: 2px solid var(--borderPrimary);
+  padding:10px 32px 10px 12px;
+  color:white;
+  line-height:20px;
+  font-weight:20px;
+  font-size:14px;
+  &:hover {
+      background-color: transparent;
+      border: 2px solid var(--borderAccentSubdued);
+  }
+  &:focus {
+      background-color: transparent;
+      border: 2px solid var(--borderAccent);
+      outline: none;
+  }
+}
+
+.defaultInputError {
+  width: calc(100% - 50px);
+  height: 20px;
+  border-radius: 30px;
+  background-color: var(--surfaceSecondary);
+  border: 2px solid var(--borderDestructive);
+  padding:10px 32px 10px 12px;
+  color:white;
+  line-height:20px;
+  font-weight:20px;
+  font-size:14px;
+  &:hover {
+      background-color: var(--background);
+      border: 2px solid var(--borderDestructive);
+  }
+  &:focus {
+      background-color: var(--background);
+      border: 2px solid var(--borderDestructive);
+      outline: none;
+  }
+}
+
+.circleInputForm {
+    width: 40px;
+    height: 40px;
+}
+
+.checkbox {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 24px;
+    height: 24px;
+    width: 24px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 22px;
+    width: 22px;
+    background-color: var(--surfaceSecondary);
+    border-radius: 50%;
+    border: 1px solid var(--borderPrimary);
+  }
+  
+  .checkbox:hover input ~ .checkmark {
+    height: 20px;
+    width: 20px;
+    border:2px solid var(--borderAccentSubdued) !important;
+  }
+  
+  .checkbox input:checked ~ .checkmark {
+    height: 22px;
+    width: 22px;
+    background-color: var(--buttonPrimary) !important;
+    border: 1px solid var(--borderWhite) !important;
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .checkbox input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .checkbox .checkmark:after {
+    left: 8px;
+    top: 4px;
+    width: 6px;
+    height: 9.5px;
+    border: 1px solid white;
+    border-width: 0 1px 1px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  .bigFieldWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+
+    span {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      color: var(--textPrimary);
+    }
+
+    .limitLabel {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      color: var(--textSecondary);
+    }
+  }
+
+  .bigField {
+    width: calc(100% - 26px);
+    padding: 10px 12px;
+    background-color: var(--surfaceSecondary);
+    border-radius: 16px;
+    border: 1px solid var(--borderPrimary);
+    resize: none;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--textPrimary);
+    font-family: "DM Sans";
+
+    &:hover {
+      background-color: var(--background);
+      outline: 2px solid var(--borderAccentSubdued);
+      textarea {
+        background-color: var(--background);
+      }
+      
+    }
+
+    &:focus {
+      background-color: var(--background);
+      outline: 2px solid var(--borderAccent);
+      textarea {
+        background-color: var(--background);
+      }
+    }
+    
+    textarea {
+      width: 100%;
+      background: none;
+      border: none;
+      outline: none;
+      resize: none;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      color: var(--textPrimary);
+      font-family: "DM Sans";
+
+      &:focus {
+        background-color: var(--background);
+      }
+    }
+  }
+
+  .bigFieldError {
+    width: calc(100% - 26px);
+    padding: 10px 12px;
+    background-color: var(--surfaceSecondary);
+    border-radius: 16px;
+    border: 1px solid var(--borderPrimary);
+    resize: none;
+    outline: 2px solid var(--borderDestructive);
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--textPrimary);
+    font-family: "DM Sans";
+
+    &:hover {
+      background-color: var(--background);
+      outline: 2px solid var(--borderAccentSubdued);
+      textarea {
+        background-color: var(--background);
+      }
+      
+    }
+
+    &:focus {
+      background-color: var(--background);
+      outline: 2px solid var(--borderAccent);
+      textarea {
+        background-color: var(--background);
+      }
+    }
+    
+    textarea {
+      width: 100%;
+      background: none;
+      border: none;
+      outline: none;
+      resize: none;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      color: var(--textPrimary);
+      font-family: "DM Sans";
+
+      &:focus {
+        background-color: var(--background);
+      }
+    }
+  }

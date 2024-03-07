@@ -1,0 +1,149 @@
+.live {
+    width: 37px;
+    height: 20px;
+    border-radius: 20px;
+    outline: 4px solid #FF353566;
+    background-color: #FF3535;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.liveText {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.viewNum {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.viewNumText {
+    font-weight: 12px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.options {
+    width: fit-content;
+    height: 20px;
+    padding: 0 5px;
+    border-radius: 20px;
+    border: 1px solid #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.optionsText {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    color: white;
+}
+
+.free {
+    width: 40px;
+    height: 20px;
+    border-radius: 20px;
+    border: 1px solid var(--accentSecondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.freeText {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    color: var(--accentSecondary);
+}
+
+.paid {
+    width: 38px;
+    height: 20px;
+    border-radius: 20px;
+    border: 1px solid #FF3535;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paidText {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    color: #FF3535;
+}
+
+.active {
+    width: 53px;
+    height: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--surfaceSuccessSubdued);
+}
+
+.activeText {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19.6px;
+    color: var(--textSuccess);
+}
+
+.expired {
+    width: 53px;
+    height: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--surfaceDestructiveSubdued);
+}
+
+.expiredText {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19.6px;
+    color: var(--textDestructive);
+}
+
+.views {
+    width: 49px;
+    height: 20px;
+    border-radius: 20px;
+    padding: 0 12px;
+    background-color: var(--surfaceSuccessSubdued);
+    gap: 2px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19.6px;
+    color: var(--textSuccess);
+    display: flex;
+    align-items: center;
+}
+
+.verified {
+    height: 22px;
+    width: 57px;
+    border-radius: 20px;
+    padding: 0 12px;
+    background-color: var(--surfaceSuccessSubdued);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22.4px;
+        color: var(--textSuccess);
+    }
+}

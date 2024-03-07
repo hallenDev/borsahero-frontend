@@ -1,0 +1,24 @@
+.wrapper {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    cursor: pointer;
+
+    &:hover {
+        img {
+            outline: 2px solid var(--borderAccentSubdued);
+        }
+    }
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.avatarInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}

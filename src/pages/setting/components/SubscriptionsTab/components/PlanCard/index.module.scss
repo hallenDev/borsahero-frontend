@@ -1,0 +1,34 @@
+
+.planCard {
+    width: calc(468px - 48px);
+    height: calc(180px - 48px);
+    border-radius: 20px;
+    background-color: var(--surfacePrimaryLess);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+
+    .tag {
+        position: absolute;
+        right: 16px;
+        top: 16px;
+    }
+
+    .content {
+        gap: 2px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .action {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 16px;
+
+        .item {
+            width: 82px;
+        }
+    }
+}

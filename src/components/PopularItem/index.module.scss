@@ -1,0 +1,42 @@
+.itemWrapper {
+    width: 227px;
+    height: 146px;
+    border-radius: 20px;
+    background-image: url('../../assets/png/image4.png');
+    background-size: cover;
+    background-position: center;
+    min-width: 243px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 8px;
+    margin: 4px;
+
+    &:hover {
+        outline: 4px solid var(--borderSuccessSubDued);
+    }
+}
+
+.topSection {
+    display: flex;
+    justify-content: space-between;
+}
+
+.itemInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 15.4px;
+    color: var(--textPrimary);
+}
+
+.bought {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 13.2px;
+    color: var(--textSecondary);
+}

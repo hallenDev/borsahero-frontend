@@ -1,0 +1,146 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.summary {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.summaryCardWrapper {
+    width: 274px;
+    height: 50px;
+    border-radius: 50px;
+    border: 1px solid #FFFFFF0F;
+    padding: 16px;
+    gap: 16px;
+    align-items: center;
+    display: flex;
+}
+
+@media (max-width: 1150px) {
+    .summaryCardWrapper {
+        width: 230px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .summaryCardWrapper {
+        width: calc(100% - 34px);
+    }
+
+    .summary {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
+
+.userIcon {
+    width: 40px;
+    height: 40px;
+    outline: 4px solid #85FF3A66;
+    background-color: var(--accentSecondary);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.followIcon {
+    width: 40px;
+    height: 40px;
+    outline: 4px solid #FF353566;
+    background-color: #FF3535;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.balanceIcon {
+    width: 40px;
+    height: 40px;
+    outline: 4px solid #6E3AFF66;
+    background-color: var(--accent);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.infoNum {
+    font-weight: 500;
+    font-size: 24.26px;
+    line-height: 31.58px;
+    color: white;
+}
+
+.infoSub {
+    font-weight: 400;
+    font-size: 14.15px;
+    line-height: 18.42px;
+    color: #FFFFFF80;
+}
+
+.balanceWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tooltip {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscriberList {
+    display: flex;
+    gap: 40px;
+}
+
+.deskTitle {
+    display: block;
+}
+
+.mobTitle {
+    display: none;
+}
+
+@media (max-width: 830px) {
+    .deskTitle {
+        display: none;
+    }
+    .mobTitle {
+        display: flex;
+    }
+
+    .wrapper {
+        gap: 24px;
+    }
+}
+
+.subscriberList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+@media (max-width: 640px) {
+    .wrapper {
+        width: calc(100% - 34px);
+    }
+
+    .subscriberList {
+        gap: 10px;
+    }
+}

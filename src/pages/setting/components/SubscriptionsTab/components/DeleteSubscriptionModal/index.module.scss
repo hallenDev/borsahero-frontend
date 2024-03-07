@@ -1,0 +1,57 @@
+.deleteModal {
+    width: calc(366px - 56px);
+    border-radius: 30px;
+    background-color: var(--surfacePrimary);
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+
+    .closeBtn {
+        cursor: pointer;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background-color: var(--surfacePrimaryHover);
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        align-items: center;
+
+        .logo {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            outline: 4px solid var(--borderPrimary);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .description {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+    }
+
+    .action {
+        display: flex;
+        justify-content: center;
+        gap: 11px;
+        .item {
+            width: 149px;
+        }
+    }
+}

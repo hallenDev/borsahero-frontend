@@ -1,0 +1,78 @@
+.cardWrapper {
+    position: relative;
+    min-width: calc(33.3% - 13.3px - 48px);
+    width: calc(33.3% - 13.3px - 48px);
+    height: auto;
+    border-radius: 24px;
+    padding: 24px;
+    background-color: var(--surfacePrimaryLess);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    .deleteBtn {
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        top: 16px;
+        right: 16px;
+        border-radius: 50%;
+        background-color: var(--surfaceDestructiveSubdued);
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.userWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.userInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.username {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18.23px;
+    color: white;
+}
+
+.description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19.6px;
+    color: var(--textSecondary);
+}
+
+@media (max-width: 1600px) {
+    .cardWrapper {
+        min-width: calc(50% - 10px - 48px);
+        width: calc(50% - 10px - 48px);
+    }
+}
+
+@media (max-width: 1040px) {
+    .cardWrapper {
+        min-width: calc(100% - 48px);
+        width: calc(100% - 48px);
+    }
+}

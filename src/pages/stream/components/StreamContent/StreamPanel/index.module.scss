@@ -1,0 +1,437 @@
+.streamPanel {
+    width:calc(38% - 50px);
+    height: calc(648px - 50px);
+    border-radius: 24px;
+    border: 1px solid var(--borderPrimary);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+
+    .tabGroup {
+        display: flex;
+        gap: 10px;
+
+        .tab {
+            width: 97.5px;
+            height: 22px;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22.4px;
+            color: var(--textSecondary);
+
+            &:hover {
+                background-color: var(--surfaceAccentSubdued);
+                color: var(--textAccent);
+            }
+        }
+        .tabSelected {
+            width: 97.5px;
+            height: 22px;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22.4px;
+            background-color: var(--surfaceAccentSubdued);
+            color: var(--textAccent);
+        }
+    }
+}
+
+.viewForm {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow-y: auto;
+
+    .viewerList {
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        overflow-y: auto;
+    }
+}
+
+.viewerItemForm {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding: 5px 5px;
+    width: calc(100% - 10px);
+    cursor: pointer;
+    border-radius: 5px;
+
+    &:hover {
+        background-color: var(--surfaceSecondary);
+    }
+
+    img {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+    }
+}
+
+.profitForm {
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+    width: 100%;
+    flex: 1 1 auto;
+    overflow-y: auto;
+}
+
+.profitItemForm {
+    display: flex;
+    gap: 8px;
+
+    img {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+    }
+
+    .message {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+
+        .content {
+            padding: 8px 16px;
+            border-radius: 4px 20px 20px 20px;
+            outline: 3px solid var(--borderSuccessSubdued);
+            background-color: var(--surfaceSuccess);
+        }
+    }
+}
+
+.voiceChatForm {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        height: 500px;
+        overflow-y: auto;
+    }
+
+    .finishBtn {
+        width: 140px;
+    }
+}
+
+.voiceChatItemForm {
+    width: calc(100% - 20px);
+    padding: 0 10px;
+    height: 48px !important;
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 12px;
+
+    &:hover {
+        background-color: var(--surfaceSecondary);
+
+        .state {
+            .interrupt {
+                display: block;
+            }
+            .allow {
+                display: block;
+            }
+        }
+    }
+
+    .user {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+
+        img {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+        }
+    }
+
+    .state {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+
+        .interrupt {
+            display: none;
+            width: 82px;
+        }
+        .allow {
+            display: none;
+            width: 110px;
+        }
+
+        .onState {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            outline: 4px solid var(--borderSuccessSubdued);
+            background-color: var(--surfaceSuccess);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .offState {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            outline: 4px solid var(--borderAccentSubdued);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+.chatForm {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    .chatContent {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        height: 426px;
+        width: 100%;
+        overflow-y: auto;
+    }
+
+    .messageBar {
+        display: flex;
+        gap: 8px;
+        position: relative;
+
+        .emotPad {
+            position: absolute;
+            bottom: 45px;
+            right: 0px;
+        }
+
+        .messageInput {
+            flex: 1 1 auto;
+        }
+
+        .emoticon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: var(--surfaceSecondary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        .attach {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: var(--surfaceSecondary);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .donation {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: var(--surfaceSuccess);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+    }
+}
+
+.chatItem {
+    display: flex;   
+    gap: 8px;
+
+    img {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+    }
+}
+
+.chatItemSelf {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 8px;
+
+    img {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+    }
+}
+
+.msgContent {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    word-break: break-all;
+
+    .time {
+        display: flex;
+        gap: 4px;
+    }
+    .timeSelf {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 4px;
+    }
+
+    .messageEmojiSelf {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .messageSelf {
+        border-radius: 20px 4px 20px 20px;
+        padding: 8px 16px;
+        background-color: var(--surfaceAccent);
+        max-width: 90%;
+        margin-left: 10%;
+    }
+    .donationSelf {
+        border-radius: 20px 4px 20px 20px;
+        outline: 3px solid var(--borderSuccessSubdued);
+        padding: 8px 16px;
+        background-color: var(--surfaceSuccess);
+        max-width: 90%;
+        margin-left: 10%;
+    }
+
+    .message {
+        border-radius: 4px 20px 20px 20px;
+        padding: 8px 16px;
+        background-color: var(--surfaceSecondary);
+        max-width: 90%;
+    }
+
+    .donation {
+        border-radius: 4px 20px 20px 20px;
+        padding: 8px 16px;
+        background-color: var(--surfaceSuccess);
+        outline: 3px solid var(--borderSuccessSubdued);
+        max-width: 90%;
+    }
+}
+
+.messageInputForm {
+    position: relative;
+    width: 100%;
+
+    button {
+        position: absolute;
+        right: 0px;
+        background: none;
+        outline: none;
+        border: none;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+    
+    input {
+        width: calc(100% - 55px);
+        height: 20px;
+        background: none;
+        outline: none;
+        border: 1px solid var(--borderPrimary);
+        border-radius: 30px;
+        padding: 10px 42px 10px 12px;
+        background-color: var(--surfaceSecondary);
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: var(--textPrimary);
+
+        &:hover {
+            background-color: var(--background);
+            border: 1px solid var(--borderAccentSubdued);
+            outline: 1px solid var(--borderAccentSubdued);
+        }
+
+        &:focus {
+            background-color: var(--background);
+            border: 1px solid var(--borderAccent);
+            outline: 1px solid var(--borderAccent);
+        }
+    }
+}
+
+.modalForm {
+    position: relative;
+    width: 310px;
+    padding: 28px;
+    height: fit-content;
+    background-color: var(--surfacePrimary);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .closeBtn {
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background-color: var(--surfacePrimaryHover);
+        top: 16px;
+        right: 16px;
+        cursor: pointer;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .actionGroup {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        .action {
+            width: 149px;
+        }
+    }
+}

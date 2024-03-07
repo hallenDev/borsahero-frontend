@@ -1,0 +1,11 @@
+.form {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+
+    .option {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+    }
+}

@@ -1,0 +1,184 @@
+.streamContent {
+    display: flex;
+    gap: 20px;
+}
+
+.content {
+    width: calc(62% - 20px);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .video {
+        width: 100%;
+        border-radius: 24px;
+        // background-image: url('../../../../assets/png/Image1.png');
+        aspect-ratio: 1.78;
+        background-size: cover;
+        position: relative;
+
+        .actionGroup {
+            width: 100%;
+            position: absolute;
+            display:flex;
+            justify-content: center;
+            gap: 10px;
+            bottom: 16px;
+
+            .action {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background-color: var(--surfacePrimaryLess);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                &:hover {
+                    outline: 2px solid var(--borderAccent);
+                }
+            }
+
+            .close {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background-color: var(--buttonDestructive);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                &:hover {
+                    outline: 2px solid var(--borderAccent);
+                }
+            }
+        }
+
+        .addStreamerForm {
+            position: absolute;
+            left: 16px;
+            bottom: 16px;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: var(--surfacePrimaryLess);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 1;
+            &:hover {
+                outline: 2px solid var(--borderAccent);
+            }
+            .addStreamer {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .streamerModal {
+                    position: absolute;
+                    z-index: 1;
+                    width: 304px;
+                    height: 190px;
+                    border-radius: 30px;
+                    padding: 16px;
+                    background-color: var(--surfacePrimaryLess);
+                    left: -8px;
+                    top: -236px;
+                    display: flex;
+                    gap: 16px;
+                    flex-direction: column;
+
+                    .closeBtn {
+                        position: absolute;
+                        right: 16px;
+                        top: 16px;
+                        width: 24px;
+                        height: 24px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 50%;
+                        background-color: var(--surfacePrimaryHover);
+                        z-index: 100;
+                    }
+
+                    .content {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 2px;
+                        width: 100%;
+                    }
+
+                    .actions {
+                        display: flex;
+                        justify-content: space-between;
+                        .action {
+                            width: 146px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.shareScreenModalForm {
+    position: relative;
+    width: 450px;
+    padding: 28px;
+    height: fit-content;
+    background-color: var(--surfacePrimary);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .closeBtn {
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background-color: var(--surfacePrimaryHover);
+        top: 16px;
+        right: 16px;
+        cursor: pointer;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        
+        .screenGroup {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            flex-direction: row;
+
+            img {
+                width: 211px;
+                height: 128px;
+                border-radius: 12px;
+                object-fit: cover;
+
+                &:hover {
+                    outline: 3px solid var(--borderAccent);
+                }
+            }
+        }
+    }
+
+    .actionGroup {
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 11px;
+
+        .action {
+            width: 149px;
+        }
+    }
+}

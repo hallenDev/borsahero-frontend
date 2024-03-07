@@ -1,0 +1,299 @@
+.singleVideoForm {
+    width: 100%;
+    height: fit-content;
+    min-height: 466px;
+}
+
+.playlistForm {
+    width: calc(100% - 48px);
+    border: 1px solid var(--borderPrimary);
+    border-radius: 32px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    touch-action: pan-y;
+}
+
+.fileSkeleton {
+    width: calc(100% - 2px);
+    height: 70px;
+    border: 1px dashed var(--borderPrimary);
+    background-color: var(--surfaceTetriary);
+    border-radius: 20px;
+}
+
+.uploadMore {
+    cursor: pointer;
+    width: calc(100% - 32px);
+    height: 38px;
+    border-radius: 20px;
+    padding: 16px;
+    border: 1px solid var(--borderPrimary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    span {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: var(--textAccent);
+    }
+}
+
+.noFiles {
+    width: 100%;
+    height: 100%;
+    min-height: 466px;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--surfacePrimaryLess);
+    border-radius: 32px;
+    gap: 16px;
+
+    .uploadLogo {
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        outline: 4px solid var(--borderAccentSubdued);
+        background-color: var(--buttonPrimary);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.fileItem {
+    width: calc(100% - 32px);
+    padding: 16px;
+    border-radius: 20px;
+    border: 1px solid var(--borderPrimary);
+    background-color: var(--surfacePrimaryLess);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    &:hover {
+        outline: 4px solid var(--borderSuccessSubdued);
+        .header .right .edit {
+            display: block;
+        }
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+
+        .left {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+
+            .dragIcon {
+                cursor: pointer;
+            }
+
+            .detail {
+                display: flex;
+                flex-direction: column;
+
+                .filename {
+                    span {
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 20px;
+                        color: var(--textPrimary);
+                    }
+                }
+
+                .uploadState {
+                    display: flex;
+                    gap: 12px;
+                    span {
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 20px;
+                        color: var(--textAccent);
+                    }
+                }
+            }
+            
+        }
+
+        .right {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+
+            .close {
+                cursor: pointer;
+            }
+            .edit {
+                display: none;
+                cursor: pointer;
+            }
+
+            .progress {
+                width: 160px;
+            }
+        }
+    }
+
+    .content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        .detailInput {
+
+            
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+
+            @media (max-width: 1000px) {
+                flex-direction: column;    
+            }
+
+            .info {
+                flex: 1 1 auto;
+                width: 65%;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                @media (max-width: 1000px) {
+                    width: 100%;
+                }
+            }
+
+            .coverForm {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                padding-bottom: 24px;
+
+                .coverError {
+                    flex: 1 1 auto;
+                    flex: 1 1 auto;
+                    width: 249px;
+                    height: 140px;
+                    border-radius: 24px;
+                    border: 1px solid var(--borderDestructive);
+                    background-color: var(--surfacePrimaryLess);
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 16px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        border-radius: 24px;
+                    }
+    
+                    .uploadIcon {
+                        position: absolute;
+                        z-index: 15;
+                        cursor: pointer;
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        background-color: var(--buttonWhite);
+                        // outline: 4px solid var(--borderAccentSubdued);
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        &:hover {
+                            outline: 4px solid var(--white400);
+                        }
+                    }
+                }
+
+                .cover {
+                    flex: 1 1 auto;
+                    width: 249px;
+                    height: 140px;
+                    border-radius: 24px;
+                    border: 1px solid var(--borderPrimary);
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 16px;
+                    position: relative;
+                    background-color: var(--surfacePrimaryLess);
+                    
+                    .trash {
+                        position: absolute;
+                        top: 10px;
+                        right: 10px;
+                        width: 32px;
+                        height: 32px;
+                        border-radius: 50%;
+                        background-color: var(--buttonDestructive);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        cursor: pointer;
+                        z-index: 15;
+                    }
+    
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        border-radius: 24px;
+                    }
+    
+                    .uploadIcon {
+                        position: absolute;
+                        z-index: 15;
+                        cursor: pointer;
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        background-color: var(--buttonWhite);
+                        
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        &:hover {
+                            outline: 4px solid var(--white400);
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .actionGroup {
+            display: flex;
+            flex-direction: row-reverse;
+            gap: 16px;
+            .action {
+                width: 82px;
+            }
+        }
+    }
+}

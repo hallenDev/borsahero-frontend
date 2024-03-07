@@ -1,0 +1,96 @@
+.defaultMenu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    span {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: var(--textPrimary);
+    }
+
+    select {
+        height: 40px;
+        width: 100%;
+        border-radius: 30px;
+        border: 1px solid var(--borderPrimary);
+        background-color: var(--surfaceSecondary);
+        color: var(--textPrimary);
+        padding: 10px 12px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+}
+
+.dropdown {
+    width: 100%;
+    position: relative;
+}
+
+.dropdownBtn {
+    cursor: pointer;
+    height: 20px;
+    width: calc(100% - 26px);
+    border-radius: 30px;
+    border: 1px solid var(--borderPrimary);
+    background-color: var(--surfaceSecondary);
+    color: var(--textPrimary);
+    padding: 10px 12px;
+    font-weight: 400;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &:hover {
+        background-color: transparent;
+        outline: 2px solid var(--borderAccentSubdued);
+    }
+
+    span {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+.dropdownContent {
+    z-index: 100;
+    width: calc(100% - 30px);
+    border: 1px solid var(--borderPrimary);
+    position: absolute;
+    height: fit-content;
+    border-radius: 20px;
+    padding: 0 14px;
+    background-color: var(--surfacePrimaryLess);
+
+    .item {
+        cursor: pointer;
+        padding: 14px 0;
+    }
+    .itemSelected {
+        cursor: pointer;
+        padding: 14px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        span {
+            color: var(--textSuccess);
+        }
+    }
+
+    .item + .item {
+        border-top: 1px solid var(--borderPrimary);
+    }
+
+    .item + .itemSelected {
+        border-top: 1px solid var(--borderPrimary);
+    }
+
+    .itemSelected + .item {
+        border-top: 1px solid var(--borderPrimary);
+    }
+}
